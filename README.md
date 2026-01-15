@@ -23,7 +23,7 @@ Import library:
 import networkx as nx
 ```
 
-Undirected graph with only one edge between nodes:
+Undirected graph with only one edge between nodes ([example]():
 ```python
 graph = nx.Graph()
 ```

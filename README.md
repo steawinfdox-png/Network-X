@@ -72,10 +72,12 @@ layout = nx.spring_layout(graph)
 ```
 
 Visualize:
+```python
 nx.draw_networkx_nodes(graph, layout)
 nx.draw_networkx_edges(graph, layout)
 nx.draw_networkx_labels(graph, layout)
 plt.show()
+```
 
 ### Design options
 

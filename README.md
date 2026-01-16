@@ -58,8 +58,8 @@ df
 | winter_maddox | john_blackwell | 47 |
 ```
 ```python
-grapher = nx.from_pandas_edgelist(df, source = 'username', target = 'first_follower', edge_attr = 'days')
-grapher.nodes()
+graph = nx.from_pandas_edgelist(df, source = 'username', target = 'first_follower', edge_attr = 'days')
+graph.nodes()
 ```
 RESULT:
 > NodeView(("john_blackwell", "yang_jeongin", "winter_maddox"))
@@ -68,11 +68,29 @@ RESULT:
 
 Make relatedness of nodes more apparent:
 ```python
-layout = nx.spring_layout(df)
+layout = nx.spring_layout(graph)
 ```
 
 Visualize:
-nx.draw_networkx_nodes(df, layout)
-nx.draw_networkx_edges(df, layout)
-nx.draw_networkx_labels(df, layout)
+nx.draw_networkx_nodes(graph, layout)
+nx.draw_networkx_edges(graph, layout)
+nx.draw_networkx_labels(graph, layout)
 plt.show()
+
+### Design options
+
+Change node size:
+```python
+nx.draw_networkx_nodes(graph, layout, node_size = 500)
+```
+
+Change node color:
+```python
+nx.draw_networkx_edges(graph, layout, alpha = 0.5)
+```
+
+Change edge thickness:
+```python
+weight = list(nx.get_edge_attributes(graph, 'days').values())
+nx.draw_networkx_edges(graph, layout, width = weight)
+```

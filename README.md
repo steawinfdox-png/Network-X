@@ -1,4 +1,4 @@
-# NetworkX: A Python library for visualizing complex relationships 
+# NetworkX: A Python library for visualizing complex relationships
 [![Build Status](https://github.com/johnwmillr/LyricsGenius/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/johnwmillr/LyricsGenius/actions/workflows/build.yml)
 [![Documentation Status](https://github.com/johnwmillr/LyricsGenius/actions/workflows/docs.yml/badge.svg?branch=master)](https://github.com/johnwmillr/LyricsGenius/actions/workflows/docs.yml)
 [![PyPI version](https://badge.fury.io/py/lyricsgenius.svg)](https://pypi.org/project/lyricsgenius/)

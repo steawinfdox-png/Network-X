@@ -50,8 +50,15 @@ df
 ```
 ```bash
 | username | first_follower | days |
------------|----------------|------|
-| john_blackwell | rani_bannerjee | 29 |
-| yang_jeongin | nancy_dorian | 143 |
-| winter_maddox | mordecai_wells | 47 |
+| john_blackwell | yang_jeongin | 29 |
+| yang_jeongin | john_blackwell | 143 |
+| winter_maddox | john_blackwell | 47 |
+```
+```python
+grapher = nx.from_pandas_edgelist(df, source = 'username', target = 'first_follower', edge_attr = 'days')
+grapher.nodes()
+```
+RESULT:
+```bash
+NodeView(("john_blackwell", "yang_jeongin", "winter_maddox"))
 ```

@@ -7,6 +7,9 @@
 
 Official documentation for `NetworkX` is available online at [networkx.org](https://networkx.org/documentation/stable/reference/index.html)
 
+# Setup
+To utilize the visualization capabilities of `NetworkX`, you will need to have `Matplotlib` installed and imported.
+
 ## Installation
 `NetworkX` requires Python 3.11 or greater.
 
@@ -60,3 +63,16 @@ grapher.nodes()
 ```
 RESULT:
 > NodeView(("john_blackwell", "yang_jeongin", "winter_maddox"))
+
+### Visualizing relationships in dataframes
+
+Make relatedness of nodes more apparent:
+```python
+layout = nx.spring_layout(df)
+```
+
+Visualize:
+nx.draw_networkx_nodes(df, layout)
+nx.draw_networkx_edges(df, layout)
+nx.draw_networkx_labels(df, layout)
+plt.show()

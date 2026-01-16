@@ -83,16 +83,21 @@ plt.show()
 
 Change node size:
 ```python
+# Change `node_size` for increasing/decreasing size of nodes
 nx.draw_networkx_nodes(graph, layout, node_size = 500)
 ```
 
 Change node color:
 ```python
+# Change `alpha` for color
 nx.draw_networkx_edges(graph, layout, alpha = 0.5)
 ```
 
 Change edge thickness:
 ```python
+# Edge weight dependent on 'days' column data
 weight = list(nx.get_edge_attributes(graph, 'days').values())
+
+# Add weight to lines connecting nodes
 nx.draw_networkx_edges(graph, layout, width = weight)
 ```

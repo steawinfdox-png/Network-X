@@ -15,13 +15,13 @@ Install package:
 ```bash
 pip install networkx
 ```
-
-## Usage
 Import library:
 
 ```python
 import networkx as nx
 ```
+
+## Usage
 
 Undirected graph with only one edge between nodes ([example](https://github.com/steawinfdox-png/Network-X/blob/main/assets/networkx-graph-types-cf81549883bb93cd4b558d22ceb8a27a.png)):
 ```python

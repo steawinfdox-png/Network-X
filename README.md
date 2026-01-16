@@ -51,14 +51,20 @@ multidigraph = nx.MultiDigraph()
 df = pd.read_csv('social_network.csv')
 df
 ```
+
 ```bash
+# social_network.csv
 | username | first_follower | days |
 | john_blackwell | yang_jeongin | 29 |
 | yang_jeongin | john_blackwell | 143 |
 | winter_maddox | john_blackwell | 47 |
 ```
+
 ```python
+# Initialize variable containing csv data
 graph = nx.from_pandas_edgelist(df, source = 'username', target = 'first_follower', edge_attr = 'days')
+
+# Retrieve all node names
 graph.nodes()
 ```
 RESULT:

@@ -23,22 +23,22 @@ import networkx as nx
 
 ## Usage
 
-Undirected graph with only one edge between nodes ([example](https://github.com/steawinfdox-png/Network-X/blob/main/assets/networkx-graph-types-cf81549883bb93cd4b558d22ceb8a27a.png)):
+Graph: undirected graph with only one edge between nodes ([example](https://github.com/steawinfdox-png/Network-X/blob/main/assets/networkx-graph-types-cf81549883bb93cd4b558d22ceb8a27a.png)):
 ```python
 graph = nx.Graph()
 ```
 
-Undirected graph with multiple edges between nodes:
+Multigraph: undirected graph with multiple edges between nodes ([example](https://github.com/steawinfdox-png/Network-X/blob/main/assets/multigraph.png)):
 ```python
 multigraph = nx.Multigraph()
 ```
 
-Directed graph with only one edge between nodes:
+Digraph: directed graph with only one edge between nodes ([example](https://github.com/steawinfdox-png/Network-X/blob/main/assets/digraph.png)):
 ```python
 digraph = nx.Digraph()
 ```
 
-Directed graph with multiple edges between nodes:
+Multidigraph: directed graph with multiple edges between nodes([example](https://github.com/steawinfdox-png/Network-X/blob/main/assets/multidigraph.png)):
 ```python
-multigraph = nx.MultiDigraph()
+multidigraph = nx.MultiDigraph()
 ```

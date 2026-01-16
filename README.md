@@ -107,3 +107,10 @@ weight = list(nx.get_edge_attributes(graph, 'days').values())
 # Add weight to lines connecting nodes
 nx.draw_networkx_edges(graph, layout, width = weight)
 ```
+
+## Contact me!
+Feel free to let me know of any errors or bugs you find! Also, if you need help for a specific project of yours using `NetworkX`, [open an issue](https://github.com/steawinfdox-png/Network-X/issues) or send me a pull request!
+
+## Credits
+- [JS_Data Talks](https://www.youtube.com/watch?v=k4tLpFEGeTo)
+- [NetworkX.org](https://networkx.org/documentation/stable/reference/introduction.html#networkx-basics)
